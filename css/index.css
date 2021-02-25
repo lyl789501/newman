@@ -1,0 +1,373 @@
+.welcome{
+    width: 1200px;
+    margin: 55px auto 120px;   /* auto就自动对齐了？ */
+
+
+}
+
+.welcome>p{  /* 这个p标签样式会作用到li的p里 */
+    width: 1200px;
+    font-size: 14px;
+    color: #666;
+    padding: 0 80px;
+    line-height: 24px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.welcome .classic{
+    width: 1200px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around; /* CSS3的新样式，需要学习下？ */
+    margin-top: 105px;
+    padding: 0 15px;   
+    overflow: hidden;
+
+}
+
+.welcome .classic li{
+    /* flex: 1;  弹性盒子写会挤在一起*/
+    /* float: left;  用浮动的效果也不错*/
+    flex:0 0 227px;
+    text-align: center;
+}
+
+
+.welcome .classic p{
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+  }
+
+.welcome h3{
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    
+
+}
+
+.welcome h4{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 29px;
+    font-weight: 800;
+
+}
+
+
+/* production center */
+
+.pro-center{
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.pro-list{
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.pro-list li{
+    float: left;
+    width: 16.666%;
+    position: relative;
+
+}
+
+.pro-list li img{
+    width: 100%;
+}
+
+.pro-list .pro-title{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-color: #e5e5e5;
+    line-height: 50px;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    margin-top: -2px;
+}
+
+.pro-center .pro-title span:first-child{
+    padding-left: 20px;
+  }
+
+.pro-list .pro-title span.add{
+    position: absolute; /* 此处的绝对定位是要把add的位置靠在最右边 */
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    display: block;
+    background-color: #999999;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    top:17.5px;
+    right: 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+}
+
+.pro-list li:hover .pro-title{
+    background-color: #01a1ff;
+    color: #fff;
+}
+
+.pro-list li:hover .pro-title .add{
+    background-color: #fff;
+    color: #01a1ff;
+  }
+
+.pro-center .prev{
+    top: 270px;
+    left: 270px;
+  }
+.pro-center .next{
+    top: 270px;
+    right: 270px;
+  }
+
+
+  /* news-center */
+.news-center{
+    width: 1200px;
+    margin: 0 auto 120px;
+}
+
+.news-show{
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-left{
+    float: left;
+}
+
+.news-left p{
+    position: absolute;
+    width: 543px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #01a1ff;
+    bottom: 8px;
+    padding-left: 10px;
+}
+
+.news-left li{
+    float: left;
+    width: 110.6px;
+    height: 5px;
+    background-color: #fff;
+    margin-top: -2px;
+}
+
+li.news-active{
+    background-color:#01a1ff ;
+}
+
+.news-right{
+    width: 605px;
+    height: 310px;
+    float: right;
+    background-color: #fff;
+  }
+
+.news-detail{
+    overflow: hidden;
+}
+
+.news-date{
+    float: left;
+    margin-right:10px ;
+}
+
+.news-date span:first-child{
+    display: block;
+    width: 70px;
+    height: 57px;
+    line-height: 57px;
+    color: #01a1ff;
+    font: 40px Tahoma;
+    text-align: center;
+    border: 1px solid #01a1ff;
+}
+
+
+.news-date span:last-child{
+    display: block;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #01a1ff;
+    font: 14px Tahoma;
+    border: 1px solid #01a1ff;
+}
+
+
+.news-content{
+    float: left;
+    width: 523px;
+    display: block;
+
+}
+
+.news-content .h2{
+    color: #01a1ff;
+    display: block;
+    font-size: 18px;
+    margin: 10px 0 15px;
+    font-weight: 900;
+
+}
+
+.news-content .p{
+    display: block;
+    color: #999;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+
+.news-list{
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.news-list li{
+    width: 100%;
+    padding: 13px 0 10px;
+    border-top: 1px dotted #ccc;
+    position: relative;
+}
+
+.news-list li:last-child{
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .news-list i{
+    font-weight: 900;
+    margin-right: 10px;
+  }
+
+.news-list small{
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+}
+
+
+/* video center */
+
+.video-center{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video-list{
+    margin: 54px 0 144px;
+    padding: 4px;
+    overflow: hidden;
+}
+
+.video-center li{
+    float: left;
+    width: 252px;
+    margin-right: 53px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-list li:last-child{
+    margin-right: 0;
+}
+
+
+.video-list img{
+    width: 260px;
+    height: 195px;
+    display: block;
+  }
+
+
+.video-list .video-title{
+    font-size: 16px;
+    margin: 25px 0 10px;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+
+.video-list .video-description{
+    color: #999;
+    font-size: 12px;
+}   
+
+.video-list .play{
+    display: block;
+    height: 45px;
+    width: 45px;
+    border: 3px solid #fff;
+    background-color: rgba(0,0,0,.5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    left: 102px; 
+    top:75px;
+}
+
+.video-list .play:after{
+    content: '';
+    display: block;
+    border: 15px solid transparent;
+    border-left-color: #fff;
+    position: absolute;
+    left: 18px;
+    top: 8px;
+}
+
+.video-list li:hover {
+    box-shadow: 3px 3px 3px #01a1ff, -3px -3px 3px #01a1ff;  /* 又是一个新样式.... */
+
+}
+
+.video-list li:hover .video-title{
+    color: #01a1ff;
+}
+ 
+.video-list li:hover .play{ /* 播放键悬浮变大的效果竟然是手动设置出来的 */
+    /* width: 54px;
+    height: 54px;
+    border: 3px solid #01a1ff;
+    background-color: rgba(255,255,255,.5);
+    left: 100px;
+    top: 73px; */
+    transform: scale(1.2);  /* 上边写了一大堆，这里好方便！ */
+    border: 3px solid #01a1ff;
+}
+
+.video-center .prev{
+    left: -50px;
+    top:270px
+}
+
+.video-center .next{
+    right: -22px;
+    top:270px;
+}
