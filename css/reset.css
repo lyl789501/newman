@@ -27,7 +27,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  min-width: 1200px;
 }
 
 ol, ul {
@@ -51,6 +50,7 @@ table {
 
 body {
   min-width: 1200px;
+  font-family: 微软雅黑;
 }
 
 a {
